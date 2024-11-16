@@ -1,0 +1,17 @@
+// src/components/ui/ProjectCard.js
+export const ProjectCard = ({ project }) => {
+  const { darkMode } = useTheme();
+  
+  return (
+    <div className={`${darkMode ? 'bg-gray-800' : 'bg-white'} p-6 rounded-lg shadow-md`}>
+      <h3 className="text-xl font-semibold mb-2">{project.title}</h3>
+      <p className={`${darkMode ? 'text-gray-300' : 'text-gray-600'} mb-4`}>
+        {project.description}
+      </p>
+      <TechnologyTags technologies={project.technologies} />
+      <a href={project.link} className="text-blue-500 hover:underline">
+        Ver proyecto →
+      </a>
+    </div>
+  );
+};

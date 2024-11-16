@@ -1,0 +1,15 @@
+// src/constants/projects.js
+export const projectsData = [
+  {
+    title: "Proyecto 1",
+    description: "Descripción corta del proyecto",
+    technologies: ["React", "Tailwind CSS"],
+    link: "#"
+  },
+  {
+    title: "Proyecto 2",
+    description: "Descripción corta del proyecto",
+    technologies: ["React", "Node.js"],
+    link: "#"
+  }
+];
